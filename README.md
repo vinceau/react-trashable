@@ -21,7 +21,7 @@ yarn add react-trashable
 ## How to use
 
 ```
-import { withTrashable } from 'trashable-react';
+import { withTrashable } from 'react-trashable';
 
 class Component extends React.Component {
     componentDidMount() {
