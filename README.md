@@ -1,8 +1,4 @@
-# trashable-react :put_litter_in_its_place:
-[![npm](https://img.shields.io/npm/v/trashable-react.svg?style=flat-square)](https://www.npmjs.com/package/trashable-react)
-[![David](https://david-dm.org/hjylewis/trashable-react.svg?style=flat-square)](https://www.npmjs.com/package/trashable-react)
-[![CircleCI](https://img.shields.io/circleci/project/github/hjylewis/trashable-react/master.svg?style=flat-square)](https://circleci.com/gh/hjylewis/trashable-react)
-[![npm](https://img.shields.io/npm/l/trashable-react.svg?style=flat-square)](https://github.com/hjylewis/trashable-react/blob/master/LICENSE)
+# react-trashable :put_litter_in_its_place:
 
 A [Higher Order Component](https://reactjs.org/docs/higher-order-components.html) to make React Components garbage collectable when unmounted.
 
@@ -10,14 +6,22 @@ Learn more about garbage collection and `trashable` and why you should use it [h
 
 ## Installation
 
+Using npm:
+
 ```
-npm install --save trashable-react
+npm install --save react-trashable
+```
+
+Using yarn:
+
+```
+yarn add react-trashable
 ```
 
 ## How to use
 
 ```
-import makeComponentTrashable from 'trashable-react';
+import { withTrashable } from 'trashable-react';
 
 class Component extends React.Component {
     componentDidMount() {
@@ -30,7 +34,7 @@ class Component extends React.Component {
 }
 
 // Passes the registerPromise() function to Component
-export default makeComponentTrashable(Component);
+export default withTrashable(Component);
 ```
 
 ## Gotchas
