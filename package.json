@@ -1,6 +1,6 @@
 {
   "name": "react-trashable",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React components for trashing promises when components unmount.",
   "author": "vinceau",
   "license": "MIT",
